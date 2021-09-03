@@ -64,7 +64,7 @@
                 <tr>
                     <th>ID</th>
                     <th>Name</th>
-                    <th>Description</th>
+                    <th>E-Mail</th>
                     <th>Action</th>
                 </tr>
             </thead>
