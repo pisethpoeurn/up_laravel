@@ -27,6 +27,7 @@
                         <div class="modal-body">
                             <div class="container mt-4">
                                 <form action="{{route('categories.store')}}" method="POST">
+                                    @csrf
                                     <div class="form-group">
                                         <label for="name">Name</label>
                                         <input type="text" name="name" class="form-control" placeholder="Your Name">
@@ -102,7 +103,7 @@
                                 </div>
                             </div>
         </div>
-        <a href="#" class="___class_+?27___" onclick="return confirm('Are you sure you want to delete this item')"><i
+        <a href="{{route('categories.destroy', $cate->id)}}" class="___class_+?27___" onclick="return confirm('Are you sure you want to delete this item')"><i
                 class="material-icons text-danger">delete</i></a>
         </td>
         </tr>

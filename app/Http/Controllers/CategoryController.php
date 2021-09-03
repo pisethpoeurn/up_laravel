@@ -39,7 +39,8 @@ class CategoryController extends Controller
         $category = new Category;
         $category->name = $request->get('name');
         $category->description = $request->get('desc');
-        return redirect('category.cateList');
+        $category->save();
+        return back();
     }
 
     /**
@@ -84,6 +85,8 @@ class CategoryController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $category = Category::find($id);
+        $category->delete();
+        return back();
     }
 }
