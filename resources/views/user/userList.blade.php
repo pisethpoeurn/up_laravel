@@ -69,12 +69,12 @@
                 </tr>
             </thead>
             <tbody>
-                <?php if($category): ?>
-                <?php foreach($category as $cate): ?>
+                <?php if($users): ?>
+                <?php foreach($users as $user): ?>
                 <tr>
-                    <td><?php echo $cate['id']; ?></td>
-                    <td><?php echo $cate['name']; ?></td>
-                    <td><?php echo $cate['description']; ?></td>
+                    <td><?php echo $user['id']; ?></td>
+                    <td><?php echo $user['name']; ?></td>
+                    <td><?php echo $user['email']; ?></td>
                     <td>
                         <a href="#" class=""
                             onclick="return confirm('Are you sure you want to delete this item')"><i
