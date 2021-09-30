@@ -56,6 +56,7 @@
                                 <nav class="sb-sidenav-menu-nested nav">
                                     <a class="nav-link" href="{{ route('users.index') }}">Users</a>
                                     <a class="nav-link" href="{{ route('categories.index')}}">Categories</a>
+                                    <a class="nav-link" href="{{ route('posts.index')}}">Posts</a>
                                 </nav>
                             </div>
                         </div>
